@@ -1,4 +1,0 @@
-import {NextResponse} from 'next/server'
-export const dynamic='force-dynamic'
-const rules={cust_1:{cpz:'Westminster CPZ A (mock)',restrictions:['No loading 7–10am','Residents only 8:30–18:30'],red_route:false,bus_lane:true,bay_types:['Pay & Display','Residents Permit'],waiver_required:true},cust_2:{cpz:'City of Westminster CPZ B (mock)',restrictions:['Pay & Display 8–18:30'],red_route:false,bus_lane:false,bay_types:['Pay & Display'],waiver_required:false},cust_3:{cpz:'Private estate (mock)',restrictions:['Loading dock managed access'],red_route:false,bus_lane:false,bay_types:['Loading Bay'],waiver_required:false}};
-export async function GET(req){const id=new URL(req.url).searchParams.get('address_id')||''; return NextResponse.json(rules[id]??{cpz:'Unknown',restrictions:[],red_route:false,bus_lane:false,bay_types:[],waiver_required:false}) }

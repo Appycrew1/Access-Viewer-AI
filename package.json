@@ -1,0 +1,23 @@
+{
+  "name": "moving-pre-survey-sveltekit-live-auth-orgs",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@sveltejs/adapter-vercel": "4.1.1",
+    "@sveltejs/kit": "2.5.10",
+    "leaflet": "1.9.4",
+    "lucide-svelte": "0.468.0",
+    "svelte": "4.2.18"
+  },
+  "devDependencies": {
+    "typescript": "5.4.5",
+    "@types/leaflet": "1.9.12",
+    "vite": "5.4.2"
+  }
+}

@@ -1,0 +1,1 @@
+import type { RequestHandler } from '@sveltejs/kit'; import { SAMPLE } from '@/lib/sample'; export const GET:RequestHandler=async()=>new Response(JSON.stringify({customers:SAMPLE.addresses.map(a=>({id:a.id,label:a.label})),depots:SAMPLE.depots.map(d=>({id:d.id,label:d.label}))}),{headers:{'content-type':'application/json'}})

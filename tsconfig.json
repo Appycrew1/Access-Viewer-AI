@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "@/*": ["./*"] },
+
     "target": "ES2022",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -13,11 +16,6 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-
-    // ✅ Add these two lines:
-    "baseUrl": ".",
-    "paths": { "@/*": ["./*"] },
-
     "types": ["@types/leaflet"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

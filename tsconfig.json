@@ -13,6 +13,11 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+
+    // ✅ Add these two lines:
+    "baseUrl": ".",
+    "paths": { "@/*": ["./*"] },
+
     "types": ["@types/leaflet"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
